@@ -4,5 +4,5 @@
       "dependencies" : [], "url": "test.xyz"},
     { "name": "list", "version": "0.1.0", "description": "implémentation de listes avec primitives",
       "dependencies" : [{"name": "stdlib"}], "url": "test.xyz"},
-  ]
+]
 }
