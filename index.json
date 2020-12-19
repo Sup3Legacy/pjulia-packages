@@ -10,7 +10,7 @@
     {
       "name": "arithlib",
       "version": "0.1.0",
-      "description": "Fonctions utilitaires d'arithmétiques",
+      "description": "Fonctions utilitaires d'arithmétique",
       "dependencies": [],
       "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/arithlib.jl"
     },
