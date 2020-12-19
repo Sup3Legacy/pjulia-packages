@@ -8,6 +8,6 @@
       "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/arithlib.jl"},
     { "name": "acker", "version": "0.1.0", "description": "Fonction(s) d'Ackerman",
       "dependencies" : [],
-      "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/acker.jl"},
+      "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/acker.jl"}
     ]
 }
