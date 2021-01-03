@@ -20,6 +20,13 @@
       "description": "Fonction(s) d'Ackerman",
       "dependencies": [],
       "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/acker.jl"
+    },
+    {
+      "name": "random",
+      "version": "0.1.0",
+      "description": "Fonctions aléatoires utiles",
+      "dependencies": [],
+      "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/random.jl"
     }
   ]
 }
