@@ -27,6 +27,13 @@
       "description": "Fonctions aléatoires utiles",
       "dependencies": [],
       "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/random.jl"
+    },
+    {
+      "name": "matrix",
+      "version": "0.1.0",
+      "description": "Fonctions utiles pour des matrices",
+      "dependencies": [],
+      "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/matrix.jl"
     }
   ]
 }
