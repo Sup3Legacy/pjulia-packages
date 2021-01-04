@@ -23,7 +23,7 @@
     },
     {
       "name": "random",
-      "version": "0.1.0",
+      "version": "0.1.4",
       "description": "Fonctions aléatoires utiles",
       "dependencies": [],
       "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/random.jl"
