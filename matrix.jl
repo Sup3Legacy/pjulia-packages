@@ -5,7 +5,7 @@ function sum_matrix(a)
     m = length(a[0])
     for i = 0 : (n - 1)
         for j = 0 : (m - 1)
-            sum = sum + (a[i])[j]
+            sum = sum + a[i][j]
         end
     end
     return sum
@@ -18,7 +18,7 @@ function make_matrix(d :: Int64, l :: Array, val :: Any) :: Any
         a = newarray(l[n - d], make_matrix(d - 1, l, val))
         for i = 0 : (2 - 1)
             b = make_matrix(d - 1, l, val)
-            a[i] := b
+            a[i] = b
         end
         return a
     end
