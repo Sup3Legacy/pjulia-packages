@@ -16,7 +16,7 @@ function make_matrix(d :: Int64, l :: Array, val :: Any) :: Any
     if d > 0
         n = array_length(l)
         a = newarray(l[n - d], make_matrix(d - 1, l, val))
-        for i = 0 : (2 - 1)
+        for i = 0 : (l[n - d] - 1)
             b = make_matrix(d - 1, l, val)
             a[i] = b
         end
