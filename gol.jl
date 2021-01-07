@@ -1,13 +1,17 @@
 include("random.jl")
 include("matrix.jl")
 
+mutable struct Ref a :: Int64 end;
+
 HEIGHT = 20
 WIDTH = 80
+iteration = Ref(0)
 playground = matrix::make_matrix(2, [HEIGHT, WIDTH], 0)
 playground_temp = matrix::make_matrix(2, [HEIGHT, WIDTH], 0)
 
 """Prints the playground"""
 function print_playground()
+    println("Game of Life, iteration : ", iteration.a)
     for i = 0 : (HEIGHT - 1)
         for j = 0 : (WIDTH - 1)
             if playground[i][j] == 1
@@ -19,7 +23,6 @@ function print_playground()
         println()
     end
 end
-
 
 """Initializes the playground randomly."""
 function initialize_playground()
@@ -79,7 +82,7 @@ function copy_back()
     end
 end
 
-
+"""Makes one step of computing."""
 function step()
     for i = 0 : (HEIGHT - 1)
         for j = 0 : (WIDTH - 1)
@@ -88,9 +91,10 @@ function step()
     end
     copy_back()
     print_playground()
+    iteration.a = iteration.a + 1
 end
 
-
+"""Run_loop."""
 function run()
     random::init_seed()
     initialize_playground()
@@ -99,5 +103,3 @@ function run()
         step()
     end
 end
-
-run()
