@@ -1,20 +1,16 @@
 include("random.jl")
 include("matrix.jl")
 
-mutable struct Ref a :: Int64 end;
-
 HEIGHT = 20
 WIDTH = 80
-iteration = Ref(0)
 playground = matrix::make_matrix(2, [HEIGHT, WIDTH], 0)
 playground_temp = matrix::make_matrix(2, [HEIGHT, WIDTH], 0)
 
 """Prints the playground"""
 function print_playground()
-    println("Game of Life, iteration : ", iteration.a)
     for i = 0 : (HEIGHT - 1)
         for j = 0 : (WIDTH - 1)
-            if playground[i][j] == 1
+            if (playground[i][j] == 1)
                 print("0")
             else
                 print(".")
@@ -24,8 +20,10 @@ function print_playground()
     end
 end
 
+
 """Initializes the playground randomly."""
 function initialize_playground()
+    somme = 0
     for i = 0 : (HEIGHT - 1)
         for j = 0 : (WIDTH - 1)
             playground[i][j] = random::randint(0, 2)
@@ -66,9 +64,9 @@ end
 """Computes a single step for a single pixel."""
 function handle_pixel(h :: Int64, w :: Int64)
     voisins = get_neigh(h, w)
-    if playground[h][w] == 0 && voisins == 3
+    if (playground[h][w] == 0) && (voisins == 3)
         playground_temp[h][w] = 1
-    elseif playground[h][w] == 1 && (voisins < 2 || voisins > 3)
+    elseif (playground[h][w] == 1) && (voisins < 2 || voisins > 3)
         playground_temp[h][w] = 0
     end
 end
@@ -82,7 +80,7 @@ function copy_back()
     end
 end
 
-"""Makes one step of computing."""
+
 function step()
     for i = 0 : (HEIGHT - 1)
         for j = 0 : (WIDTH - 1)
@@ -91,12 +89,10 @@ function step()
     end
     copy_back()
     print_playground()
-    iteration.a = iteration.a + 1
 end
 
-"""Run_loop."""
+
 function run()
-    random::init_seed()
     initialize_playground()
     while true 
         a = input_int() #sert à temporiser
