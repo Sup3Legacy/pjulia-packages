@@ -39,7 +39,7 @@
       "name": "gol",
       "version": "0.1.0",
       "description": "Game of life",
-      "dependencies": ["random", "matrix"],
+      "dependencies": [],
       "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/gol.jl"
     }
   ]
