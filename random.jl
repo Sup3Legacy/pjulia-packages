@@ -1,7 +1,7 @@
  seed = [123456783549]
- m = 2 ^ 30
- a = 1103515245
- c = 12345
+ m = 2 ^ 31 - 1
+ a = 16807
+ c = 17
 
 """
 randint(a, b) returns a random integer in [a, b[.
