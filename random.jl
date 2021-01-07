@@ -8,7 +8,7 @@ randint(a, b) returns a random integer in [a, b[.
 """
 function randint(min :: Int64, max :: Int64) :: Int64
     value = ( a *  seed[0] +  c) %  m
-    seed[0] := value;
+    seed[0] = value;
     value = (value % (max - min)) + min
     return value
 end 
