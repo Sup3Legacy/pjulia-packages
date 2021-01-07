@@ -12,3 +12,8 @@ function randint(min :: Int64, max :: Int64) :: Int64
     value = (value % (max - min)) + min
     return value
 end 
+
+function init_seed()
+    println("Please enter a new value for the seed")
+    seed[0] = input_int()
+end
