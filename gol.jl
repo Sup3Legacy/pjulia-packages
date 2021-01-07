@@ -9,7 +9,7 @@ playground_temp = matrix::make_matrix(2, [HEIGHT, WIDTH], 0)
 """Prints the playground"""
 function print_playground()
     for i = 0 : (HEIGHT - 1)
-        for j : 0 : (WIDTH - 1)
+        for j = 0 : (WIDTH - 1)
             if playground[i][j] == 1
                 print("0")
             else
@@ -24,7 +24,7 @@ end
 """Initializes the playground randomly."""
 function initialize_playground()
     for i = 0 : (HEIGHT - 1)
-        for j : 0 : (WIDTH - 1)
+        for j = 0 : (WIDTH - 1)
             playground[i][j] = random::randint(0, 2)
         end
     end
@@ -73,7 +73,7 @@ end
 """copies back from playground_temp to playground."""
 function copy_back()
     for i = 0 : (HEIGHT - 1)
-        for j : 0 : (WIDTH - 1)
+        for j = 0 : (WIDTH - 1)
             playground[i][j] = playground_temp[i][j]
         end
     end
@@ -81,17 +81,23 @@ end
 
 
 function step()
-    while true 
-        a = input_int() #sert à temporiser
-        for i = 0 : (HEIGHT - 1)
-            for j : 0 : (WIDTH - 1)
-                handle_pixel(i, j)
-            end
+    for i = 0 : (HEIGHT - 1)
+        for j = 0 : (WIDTH - 1)
+            handle_pixel(i, j)
         end
-        copy_back()
-        print_playground()
     end
+    copy_back()
+    print_playground()
 end
 
 
+function run()
+    random::init_seed()
+    initialize_playground()
+    while true 
+        a = input_int() #sert à temporiser
+        step()
+    end
+end
 
+run()
