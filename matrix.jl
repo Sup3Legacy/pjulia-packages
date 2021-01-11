@@ -2,8 +2,8 @@
 function sum_matrix(a)
     sum = 0
     n = array_length(a)
-    m = array_length(a[0])
     for i = 0 : (n - 1)
+        m = array_length(a[i])
         for j = 0 : (m - 1)
             sum = sum + a[i][j]
         end

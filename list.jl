@@ -1,12 +1,3 @@
-"""function float_of_int from pjulia-stdlib:
-
-Converts an int to a float."""
-function float_of_int(n :: Int64) :: Float64
-    return n + 0.;
-end;
-
-
-# Listes
 mutable struct List elt :: Any; next; end; # structure de liste
 # Une liste vide va être : List(Vnothing, Vnothing)
 

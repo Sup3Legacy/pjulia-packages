@@ -14,3 +14,6 @@ function fast_expo(n :: Int64, exp :: Int64) :: Int64
     else
         let res = fast_expo(n, div(exp, 2))
         return (res * res * n)
+    end
+end
+

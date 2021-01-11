@@ -41,6 +41,13 @@
       "description": "Game of life",
       "dependencies": [],
       "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/gol.jl"
+    },
+    {
+      "name": "pi",
+      "version": "0.1.0",
+      "description": "Fonctions autour du nombre Pi",
+      "dependencies": [],
+      "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/pi.jl"
     }
   ]
 }
