@@ -49,13 +49,19 @@
       "dependencies": [],
       "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/pi.jl"
     },
-    
     {
       "name": "tester",
       "version": "0.1.1",
       "description": "A file to test petit-julia",
       "dependencies": [],
       "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/tester.jl"
+    },
+    {
+      "name": "brainfuck",
+      "version": "0.1.0",
+      "description": "Brainfuck interpreter",
+      "dependencies": [],
+      "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/brainfuck.jl"
     }
   ]
 }
