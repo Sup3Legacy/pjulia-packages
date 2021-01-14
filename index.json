@@ -48,7 +48,7 @@
       "description": "Fonctions autour du nombre Pi",
       "dependencies": [],
       "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/pi.jl"
-    }
+    },
     
     {
       "name": "tester",
