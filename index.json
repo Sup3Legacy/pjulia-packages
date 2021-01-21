@@ -76,6 +76,13 @@
       "description": "Petit morpion des familles",
       "dependencies": [],
       "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/morpion.jl"
+    },
+    {
+        "name":"compilateur",
+        "version": "0.1.0",
+        "description": "petit compilateur"
+        "dependencies": [],
+        "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/compilateur.jl"
     }
   ]
 }
