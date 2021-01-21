@@ -69,6 +69,13 @@
       "description": "Implementation of asciiFluid",
       "dependencies": [],
       "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/asciiFluid.jl"
+    },
+    {
+      "name": "morpion",
+      "version": "0.1.0",
+      "description": "Petit morpion des familles",
+      "dependencies": [],
+      "url": "https://raw.githubusercontent.com/Sup3Legacy/pjulia-packages/main/morpion.jl"
     }
   ]
 }
